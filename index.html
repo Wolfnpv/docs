@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юридическая документация — Wolf VPN</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #161616;
+            --accent-color: #e5b842;
+            --text-color: #d1d1d1;
+            --border-color: #2a2a2a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--accent-color);
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .tab-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn.active {
+            background-color: var(--accent-color);
+            color: #000;
+            font-weight: bold;
+            border-color: var(--accent-color);
+        }
+
+        .content-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: #222;
+            color: #888;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>WOLF VPN</h1>
+        <p>Правовая информация и условия обслуживания</p>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('terms')">Пользовательское соглашение</button>
+        <button class="tab-btn" onclick="openTab('privacy')">Политика конфиденциальности</button>
+    </div>
+
+    <div class="content-card">
+        <!-- ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ -->
+        <div id="terms" class="tab-content active">
+            <h2>Пользовательское соглашение</h2>
+            <div class="date-badge">Дата вступления в силу: 14 октября 2026 г.</div>
+
+            <h3>1. Общие положения</h3>
+            <p>1.1. Настоящее Пользовательское соглашение (далее — «Соглашение») регулирует порядок использования онлайн-сервиса Telegram-бота @wolfnpvbot (далее — «Сервис»), предоставляемого Администрацией.</p><p>1.2. Используя Сервис, включая запуск бота, регистрацию, оплату услуг или получение доступа к материалам, Пользователь подтверждает, что полностью ознакомился с условиями настоящего Соглашения и принимает их в полном объёме.</p>
+            <p>1.3. В случае несогласия с условиями Соглашения Пользователь обязан прекратить использование Сервиса.</p>
+
+            <h3>2. Характер услуг и цифровых товаров</h3>
+            <p>2.1. Сервис предоставляет цифровые товары и услуги нематериального характера, включая, но не ограничиваясь: сервисные услуги по шифрованию данных, цифровые конфигурационные настройки, информационные материалы и поддержку.</p>
+            <p>2.2. Материалы, предоставляемые через Сервис, могут включать: информацию из открытых источников, авторские материалы Администрации и третьих лиц, аналитические обзоры и подборки.</p>
+            <p>2.3. Пользователь осознаёт и соглашается, что ценность цифровых товаров и услуг Сервиса заключается в систематизации, форме подачи, сопровождении, поддержке и обновлениях.</p>
+
+            <h3>3. Отказ от гарантий и ответственности</h3>
+            <p>3.1. Сервис предоставляется на условиях «AS IS» («как есть»).</p>
+            <p>3.2. Администрация не гарантирует соответствие Сервиса ожиданиям Пользователя и его бесперебойную работу при внешних сетевых сбоях.</p>
+
+            <h3>4. Законность использования</h3>
+            <p>4.1. Сервис не предназначен для поощрения, организации или содействия противоправной деятельности.</p>
+            <p>4.2. Пользователь обязуется использовать Сервис исключительно в рамках применимого законодательства.</p>
+
+            <h3>5. Платежи и возвраты</h3>
+            <p>5.1. Оплата услуг производится на условиях, указанных в Сервисе до момента оплаты.</p>
+            <p>5.2. В связи с нематериальным характером цифровых товаров и услуг, возврат денежных средств после предоставления доступа не осуществляется, за исключением случаев технической вины Сервиса.</p>
+            <p>5.3. Для рассмотрения вопросов возврата Пользователь обращается в службу поддержки в течение 24 часов.</p>
+
+            <h3>6. Контактная информация</h3>
+            <p>Обращения по всем вопросам принимаются в службе поддержки Telegram-бота: <strong>@wolfnpvbot</strong></p>
+        </div>
+
+        <!-- ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ -->
+        <div id="privacy" class="tab-content">
+            <h2>Политика конфиденциальности</h2>
+            <div class="date-badge">Дата вступления в силу: 14 октября 2026 г.</div>
+
+            <p>Политика конфиденциальности регулирует сбор, использование и защиту информации пользователей сервиса. Собираются минимально необходимые идентификаторы аккаунта для обеспечения работы подписки.</p>
+
+            <h3>1. Общие положения</h3>
+            <p>1.1. Настоящая Политика регулирует порядок обработки и защиты информации, которую Пользователь передаёт при использовании Telegram-бота @wolfnpvbot.</p>
+            <p>1.2. Используя Сервис, Пользователь подтверждает согласие с условиями данной Политики.</p>
+
+            <h3>2. Сбор информации</h3>
+            <p>2.1. Сервис может собирать: идентификаторы аккаунта (Telegram ID, никнейм), техническую информацию и историю взаимодействий с ботом.</p>
+            <p>2.2. Сервис <strong>не требует</strong> предоставления паспортных данных, документов или персональных фотографий.</p>
+
+            <h3>3. Использование и передача данных</h3>
+            <p>3.1. Данные используются исключительно для функционирования сервиса, связи с Пользователем и поддержки.</p>
+            <p>3.2. Передача информации третьим лицам возможна только в случаях, прямо предусмотренных законодательством или для обработки платежей эквайрингом.</p>
+
+            <h3>4. Безопасность</h3>
+            <p>4.1. Администрация принимает необходимые меры безопасности для защиты технических данных Пользователей.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Wolf VPN. Все права защищены.
+    </footer>
+</div>
+
+<script>function openTab(tabName) {
+        var contents = document.getElementsByClassName("tab-content");
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].classList.remove("active");
+        }
+        
+        var buttons = document.getElementsByClassName("tab-btn");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("active");
+        }
+        
+        document.getElementById(tabName).classList.add("active");
+        event.currentTarget.classList.add("active");
+    }
+</script>
+
+</body>
+</html>
